@@ -1,139 +1,1099 @@
-<title>Sayan Ghosh &mdash; Data Journalism</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600&family=Public+Sans:wght@400;500;600&display=swap"><style>
-:root{--ground:#FFF;--panel:#F6F7F8;--ink:#14171B;--ink-2:#4A525B;--ink-3:#79828C;
---rule:#E3E6E9;--rule-soft:#EEF0F2;--accent:#8C2019;--accent-soft:#F7EAE9}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--ground:#0E1013;--panel:#171A1E;
---ink:#E9EBEE;--ink-2:#A7AFB8;--ink-3:#767F89;--rule:#252A30;--rule-soft:#1B1F24;
---accent:#E08A80;--accent-soft:#2A1816}}
-:root[data-theme="dark"]{--ground:#0E1013;--panel:#171A1E;--ink:#E9EBEE;--ink-2:#A7AFB8;
---ink-3:#767F89;--rule:#252A30;--rule-soft:#1B1F24;--accent:#E08A80;--accent-soft:#2A1816}
-*{box-sizing:border-box}
-body{background:var(--ground);color:var(--ink);margin:0;font-family:"Public Sans","Helvetica Neue",Arial,sans-serif;
-font-size:15.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
-.wrap{max-width:860px;margin:0 auto;padding-inline:22px;padding-block:0 80px}
-a{color:inherit}img{max-width:100%;display:block}
-header.top{border-bottom:1px solid var(--rule)}
-header.top .wrap{padding-block:48px 32px}
-h1{font-family:"Literata",Georgia,serif;font-weight:600;font-size:clamp(28px,5vw,42px);
-letter-spacing:-.02em;margin:0;line-height:1.06;text-wrap:balance}
-.tagline{font-size:16.5px;color:var(--ink-2);margin:14px 0 0;max-width:58ch}
-.contact{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:22px;
-font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink-3)}
-.contact a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid var(--rule)}
-.contact a:hover{border-bottom-color:var(--accent);color:var(--accent)}
-.back{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3);
-text-decoration:none;letter-spacing:.04em;display:inline-block;margin-bottom:26px}
-.back:hover{color:var(--accent)}
-.label{font-family:"IBM Plex Mono",monospace;font-size:10.5px;font-weight:600;letter-spacing:.16em;
-text-transform:uppercase;color:var(--ink-3);margin:50px 0 0;padding-bottom:9px;
-border-bottom:1px solid var(--ink);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
-.label em{font-style:normal;font-weight:400;letter-spacing:.05em;text-transform:none}
-.date{font-family:"IBM Plex Mono",monospace;font-size:11.5px;font-weight:600;color:var(--accent);
-letter-spacing:.06em;display:block;margin-bottom:7px}
-.meta{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3);letter-spacing:.04em;
-display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center}
-.meta .sole{background:var(--accent-soft);color:var(--accent);font-weight:600;padding:2px 6px;
-border-radius:2px;letter-spacing:.08em}
-h2{font-family:"Literata",Georgia,serif;font-weight:600;font-size:clamp(22px,3.4vw,30px);
-line-height:1.2;letter-spacing:-.015em;margin:9px 0 0;text-wrap:balance}
-h2 a{text-decoration:none}h2 a:hover{color:var(--accent)}
-.finding{font-size:16px;color:var(--ink-2);margin:12px 0 0;max-width:66ch}
-.credits{display:flex;flex-wrap:wrap;gap:6px 26px;margin-top:15px;
-font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3)}
-.credits b{color:var(--ink-2);font-weight:500}
-figure{margin:22px 0 0;border:1px solid var(--rule);border-radius:2px;overflow:hidden;background:var(--panel)}
-figcaption{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--ink-3);
-padding:9px 12px;border-top:1px solid var(--rule);background:var(--panel)}
-article.card{padding-block:30px;border-bottom:1px solid var(--rule-soft)}
-.thumb{margin-top:16px;max-height:260px;overflow:hidden;border:1px solid var(--rule);border-radius:2px}
-.thumb img{width:100%;object-fit:cover;object-position:top}
-.note{margin-top:42px;padding:17px 19px;border:1px solid var(--rule);border-left:3px solid var(--accent);
-border-radius:2px;background:var(--panel)}
-.note p{margin:0;font-size:14px;color:var(--ink-2);line-height:1.6}.note p+p{margin-top:9px}
-footer{margin-top:46px;padding-top:22px;border-top:1px solid var(--rule);
-font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3);line-height:1.8}
-</style>
-<header class="top"><div class="wrap">
-<h1>Sayan Ghosh</h1>
-<p class="tagline">Data journalist and newsroom editor. Seven years across The Times of India, The Hindu,
-Republic and Network18 &mdash; reporting the stories, and building the graphics that carry them.</p>
-<div class="contact"><span>Cardiff, UK</span>
-<a href="mailto:ghosh.sayan8@gmail.com">ghosh.sayan8@gmail.com</a>
-<a href="https://linkedin.com/in/sayangjourno">linkedin.com/in/sayangjourno</a></div>
-</div></header>
-<div class="wrap">
-<p class="label">Written and visualised alone <em>6 pieces</em></p>
-<article class="card">
-<span class="date">Published July 2024</span>
-<div class="meta"><span class="sole">Sole byline</span><span>The Times of India</span></div>
-<h2><a href="clips/odisha-sdg-journey.html">From Start to Star: Odisha's SDG Journey</a></h2>
-<p class="finding">Odisha's composite score on NITI Aayog's SDG India Index rose 15 points between 2018 and 2023-24, from 51 to 66, moving it from &ldquo;Performer&rdquo; to &ldquo;Front Runner&rdquo; and making it one of India's fastest gainers. Reading all 16 goals across four editions shows the progress is uneven: gender equality and clean water run against the headline score.</p>
-<div class="credits"><span><b>Data:</b> NITI Aayog SDG India Index, four editions</span></div>
-<div class="thumb"><a href="clips/odisha-sdg-journey.html"><img src="clips/odisha-sdg-journey.jpg" alt="From Start to Star: Odisha&#x27;s SDG Journey"></a></div>
-</article><article class="card">
-<span class="date">Published September 2024</span>
-<div class="meta"><span class="sole">Sole byline</span><span>The Times of India</span></div>
-<h2><a href="clips/odisha-potato-paradox.html">Odisha's Potato Paradox</a></h2>
-<p class="finding">Odisha planted 172% more land with potatoes between 2009-10 and 2023-24, and grew 139% more of them. Yield per hectare fell 12% over the same period. Fourteen years of production data, read against a state that needs 10.21 lakh tonnes a year and grows 4.28 &mdash; which is why a supply crunch in West Bengal moves prices in Bhubaneswar.</p>
-<div class="credits"><span><b>Data:</b> Directorate of Agriculture &amp; Food Production, Odisha; Indiastat; NSSO</span></div>
-<div class="thumb"><a href="clips/odisha-potato-paradox.html"><img src="clips/odisha-potato-paradox.jpg" alt="Odisha&#x27;s Potato Paradox"></a></div>
-</article><article class="card">
-<span class="date">Published November 2024</span>
-<div class="meta"><span class="sole">Sole byline</span><span>The Times of India</span></div>
-<h2><a href="clips/biden-harris.html">Why Biden-Harris Failed Despite This</a></h2>
-<p class="finding">The Economist called the US economy &ldquo;the envy of the world&rdquo; weeks before the election. Voters disagreed. Nine indicators set side by side across two administrations show where the aggregates and the experience came apart: GDP up $2 trillion a year and market wealth up 121%, against inflation of 20.5% and real wages down 2.4%.</p>
-<div class="credits"><span><b>Data:</b> US Bureau of Labor Statistics; Federal Reserve Bank of St Louis; CBRE; US Customs &amp; Border Protection</span></div>
-<div class="thumb"><a href="clips/biden-harris.html"><img src="clips/biden-harris.jpg" alt="Why Biden-Harris Failed Despite This"></a></div>
-</article><article class="card">
-<span class="date">Published 5 November 2024</span>
-<div class="meta"><span class="sole">Sole byline</span><span>The Times of India &middot; Statoistics</span></div>
-<h2><a href="clips/statoistics-tax.html">Has Indian Tax System Become More Pro-Poor?</a></h2>
-<p class="finding">Direct taxes reached 57% of India's total tax revenue in FY24, the highest share in fourteen years and a ten-point rise in four. It matters because the other 43% is indirect tax, which falls on everyone who buys anything &mdash; including the poor.</p>
-<div class="credits"><span><b>Data:</b> SBI Ecowrap</span></div>
-<div class="thumb"><a href="clips/statoistics-tax.html"><img src="clips/statoistics-tax.jpg" alt="Has Indian Tax System Become More Pro-Poor?"></a></div>
-</article><article class="card">
-<span class="date">Published 2025</span>
-<div class="meta"><span class="sole">Sole byline</span><span>The Times of India &middot; Statoistics</span></div>
-<h2><a href="clips/statoistics-ipl.html">IPL's Boundary Rush In Two Trendlines</a></h2>
-<p class="finding">A boundary came every seventh ball in the IPL, against every ninth in 2021. Sixes arrived every thirteenth ball, against every twentieth. Two trend lines that cross the same story: the wait for a hit to the fence has almost halved in three seasons.</p>
-<div class="credits"><span><b>Data:</b> ESPNcricinfo</span></div>
-<div class="thumb"><a href="clips/statoistics-ipl.html"><img src="clips/statoistics-ipl.jpg" alt="IPL&#x27;s Boundary Rush In Two Trendlines"></a></div>
-</article><article class="card">
-<span class="date">Published May 2024</span>
-<div class="meta"><span class="sole">Sole byline</span><span>The Times of India</span></div>
-<h2><a href="clips/third-phase-polling.html">3rd Phase Polling: A Quick Look</a></h2>
-<p class="finding">Every BJP Lok Sabha candidate analysed in Odisha's third phase had a criminal case pending, and half had serious ones. Of 64 candidates, 44% were crorepatis, with average declared assets of &#8377;11.8 crore. Built from affidavit data across six Lok Sabha seats and 381 of 383 assembly candidates.</p>
-<div class="credits"><span><b>Data:</b> Association for Democratic Reforms candidate affidavits</span></div>
-<div class="thumb"><a href="clips/third-phase-polling.html"><img src="clips/third-phase-polling.jpg" alt="3rd Phase Polling: A Quick Look"></a></div>
-</article>
-<p class="label">Co-reported <em>3 pieces</em></p>
-<article class="card">
-<span class="date">Published May 2024</span>
-<div class="meta"><span>with Riyan Ramanath</span><span>The Times of India</span></div>
-<h2><a href="clips/fourth-phase-polling.html">4th Phase Polling: A Quick Look</a></h2>
-<p class="finding">Odisha's final phase: 66 Lok Sabha candidates across six seats and 394 assembly nominees. Thirty per cent of Lok Sabha candidates were crorepatis, averaging &#8377;3.83 crore in declared assets, and 23% had criminal cases pending. Mayurbhanj fielded 99 assembly candidates; Puri fielded 24.</p>
-<div class="credits"><span><b>Data:</b> Association for Democratic Reforms candidate affidavits</span></div>
-<div class="thumb"><a href="clips/fourth-phase-polling.html"><img src="clips/fourth-phase-polling.jpg" alt="4th Phase Polling: A Quick Look"></a></div>
-</article><article class="card">
-<span class="date">Published May 2024</span>
-<div class="meta"><span>with Riyan Ramanath</span><span>The Times of India</span></div>
-<h2><a href="clips/first-phase-polling.html">1st Phase Polling: A Quick Check</a></h2>
-<p class="finding">Every BJP and BJD candidate contesting Odisha's first phase was a crorepati, as were 75% of Congress candidates. Across 37 Lok Sabha and 243 assembly candidates: 19% had declared criminal cases and 16% serious ones, with average assets of &#8377;3.70 crore.</p>
-<div class="credits"><span><b>Data:</b> Association for Democratic Reforms candidate affidavits</span></div>
-<div class="thumb"><a href="clips/first-phase-polling.html"><img src="clips/first-phase-polling.jpg" alt="1st Phase Polling: A Quick Check"></a></div>
-</article><article class="card">
-<span class="date">Published 3 May 2025</span>
-<div class="meta"><span>with Riyan Ramanath; graphics by Sayan Ghosh</span><span>The Times of India, Bhubaneswar</span></div>
-<h2><a href="clips/flaming-greens.html">Flaming Greens</a></h2>
-<p class="finding">Odisha recorded 1.39 lakh forest fire detections between November 2019 and June 2024 &mdash; more than any other Indian state, ahead of Madhya Pradesh's 1.23 lakh and Chhattisgarh's 1.09 lakh. India's national trend spikes in 2020-21 then declines steadily. Odisha's does not: a surge past 51,000, a dip, a second rise, then a 37% fall.</p>
-<div class="credits"><span><b>Data:</b> Forest Survey of India; Odisha State Forest Department</span></div>
-<div class="thumb"><a href="clips/flaming-greens.html"><img src="clips/flaming-greens.jpg" alt="Flaming Greens"></a></div>
-</article>
-<div class="note">
-<p><strong>A note on format.</strong> These ran in the print edition of The Times of India, where full-page
-data features are not always republished online. Each page is reproduced in full, carrying its original
-masthead and date.</p>
-<p>Earlier bylines include <em>Forbes</em> and three features for <em>The Diplomat</em>, available online.</p>
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FCFBF8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B0C10" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://wannabecoder45.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wannabecoder45.github.io/">
+<meta property="og:title" content="Sayan Ghosh, journalist and editor">
+<meta property="og:description" content="Full-page data stories for The Times of India, business reporting published on Forbes, investigations for The Diplomat, and explainers, data stories and film reviews for The Hindu.">
+<meta name="twitter:card" content="summary">
+<title>Sayan Ghosh</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Sayan Ghosh, journalist and editor. Full-page data stories for The Times of India, business reporting published on Forbes, investigations for The Diplomat, explainers, data stories and film reviews for The Hindu, and reporting for The Indian Express, with a guide for readers outside India.">
+<script src="theme.js"></script>
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@400;500;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,400..800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@700&family=Noto+Sans+Devanagari:wght@700&family=Noto+Sans+Tamil:wght@700&display=swap&text=%E0%A4%82%E0%A4%88%E0%A4%8F%E0%A4%95%E0%A4%9A%E0%A4%A1%E0%A4%A3%E0%A4%A4%E0%A4%A8%E0%A4%AA%E0%A4%AC%E0%A4%AE%E0%A4%B2%E0%A4%BE%E0%A5%81%E0%A5%87%E0%A5%8B%E0%A5%8D%E0%A6%95%E0%A6%A4%E0%A6%B2%E0%A6%BE%E0%AE%9A%E0%AE%A9%E0%AF%86%E0%AF%88%E0%AF%8D">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#work">Skip to the work</a>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="frame">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true"><span>S</span><span>G</span></span>
+        <span class="brand-text">
+          <span class="brand-name">Sayan Ghosh</span>
+          <span class="brand-line">Journalist and editor, Cardiff</span>
+        </span>
+      </a>
+      <nav class="topnav" aria-label="Sections">
+        <ul>
+          <li><a href="#work" data-nav="work">Work</a></li>
+          <li><a href="#journey" data-nav="journey">Journey</a></li>
+          <li><a href="#archive" data-nav="archive">Archive</a></li>
+          <li><a href="#guide" data-nav="guide">Guide</a></li>
+          <li><a href="#contact" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>
+        <span class="toggle-text">Dark mode</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- Hero: the name sets in, and the departures board flips to show where the work has run -->
+  <section class="hero" id="top" aria-labelledby="hero-name">
+    <div class="wrap">
+      <div class="frame">
+        <p class="made-note">I built this website using skills from my MSc in Computational and Data Journalism at Cardiff University. AI was used to assist me in developing it.</p>
+        <div class="hero-top">
+          <p class="dateline">Cardiff, Wales, UK</p>
+          <p class="status"><span class="status-dot" aria-hidden="true"></span>Studying for an MSc in Computational and Data Journalism at Cardiff University</p>
+        </div>
+
+        <h1 class="hero-name" id="hero-name">
+          <span class="sr-only">Sayan Ghosh</span>
+          <span class="line" aria-hidden="true"><span class="ch" style="--i:0">S</span><span class="ch" style="--i:1">a</span><span class="ch" style="--i:2">y</span><span class="ch" style="--i:3">a</span><span class="ch" style="--i:4">n</span></span>
+          <span class="line" aria-hidden="true"><span class="ch" style="--i:5">G</span><span class="ch" style="--i:6">h</span><span class="ch" style="--i:7">o</span><span class="ch" style="--i:8">s</span><span class="ch" style="--i:9">h</span></span>
+        </h1>
+
+        <div class="hero-body">
+          <div class="hero-copy">
+            <p class="hero-motto"><span class="stamp" style="--i:0">Stories.</span> <span class="stamp" style="--i:1">Evidence.</span> <span class="stamp" style="--i:2">Context.</span></p>
+            <p class="hero-bio">I’m a data journalist and editor with seven years in Indian newsrooms, from Delhi to Chennai and everything in between, and now a master’s student in Cardiff. I report the story, find and clean the data behind it, and build the graphics that carry it.</p>
+            <p class="hero-avail">Looking for data journalism, research and editing roles. I can work up to 20 hours a week during my MSc, and full-time from autumn 2027 on the UK Graduate visa, with no sponsorship needed until 2029.</p>
+            <div class="hero-actions">
+              <a class="btn btn--solid" href="#selected">See my selected works</a>
+              <a class="btn" href="Sayan-Ghosh-CV.pdf" target="_blank" rel="noopener" download>Download my CV<span class="sr-only"> (PDF)</span></a>
+              <a class="btn" href="#contact">Get in touch</a>
+            </div>
+            <p class="hero-hint">Reading from outside India? Words with a dotted underline, like <a class="term" href="#g-lakh">lakh</a>, open a short explanation, and <a class="hint-link" href="#guide">the guide</a> at the end covers Indian newspapers and institutions.</p>
+          </div>
+
+          <div class="board" id="board">
+            <div class="board-head" aria-hidden="true">
+              <span class="board-label">Published in</span>
+              <span class="board-clock"><span class="board-label">Cardiff</span><span class="flaps flaps--clock" id="board-clock" data-flap="--:--">--:--</span></span>
+            </div>
+            <ol class="departures" aria-label="Where my work has appeared">
+              <li>
+                <a class="dep" href="#toi">
+                  <span class="flaps flaps--dep" data-flap="THE TIMES OF INDIA" data-width="18" aria-hidden="true">THE TIMES OF INDIA</span>
+                  <span class="flaps flaps--status" data-flap="DATA PAGES" data-width="10" aria-hidden="true">DATA PAGES</span>
+                  <span class="sr-only">The Times of India: data pages</span>
+                </a>
+              </li>
+              <li>
+                <a class="dep" href="#forbes">
+                  <span class="flaps flaps--dep" data-flap="FORBES VIA ZENGER" data-width="18" aria-hidden="true">FORBES VIA ZENGER</span>
+                  <span class="flaps flaps--status" data-flap="BUSINESS" data-width="10" aria-hidden="true">BUSINESS</span>
+                  <span class="sr-only">Forbes, through Zenger News: business</span>
+                </a>
+              </li>
+              <li>
+                <a class="dep" href="#diplomat">
+                  <span class="flaps flaps--dep" data-flap="THE DIPLOMAT" data-width="18" aria-hidden="true">THE DIPLOMAT</span>
+                  <span class="flaps flaps--status" data-flap="LONG READS" data-width="10" aria-hidden="true">LONG READS</span>
+                  <span class="sr-only">The Diplomat: long reads</span>
+                </a>
+              </li>
+              <li>
+                <a class="dep" href="#hindu">
+                  <span class="flaps flaps--dep" data-flap="THE HINDU" data-width="18" aria-hidden="true">THE HINDU</span>
+                  <span class="flaps flaps--status" data-flap="EXPLAINERS" data-width="10" aria-hidden="true">EXPLAINERS</span>
+                  <span class="sr-only">The Hindu: explainers</span>
+                </a>
+              </li>
+              <li>
+                <a class="dep" href="#express">
+                  <span class="flaps flaps--dep" data-flap="THE INDIAN EXPRESS" data-width="18" aria-hidden="true">THE INDIAN EXPRESS</span>
+                  <span class="flaps flaps--status" data-flap="REPORTING" data-width="10" aria-hidden="true">REPORTING</span>
+                  <span class="sr-only">The Indian Express: reporting</span>
+                </a>
+              </li>
+            </ol>
+            <p class="board-foot" aria-hidden="true">Pick a row to jump to the work</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Masthead marquee: moves with the scroll -->
+  <section class="band" aria-label="Where my work has appeared">
+    <p class="sr-only">Newsrooms and publications: The Times of India, Forbes, Zenger News, The Diplomat, The Hindu, The Indian Express, Republic Media Network, Network18, Firstpost, InsideOver and Asia Fund Managers.</p>
+    <div class="marquee" data-marquee data-speed="38" data-direction="-1" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span class="marquee-item">The Times of India</span><span class="sep"></span>
+          <span class="marquee-item">Forbes</span><span class="sep"></span>
+          <span class="marquee-item">Zenger News</span><span class="sep"></span>
+          <span class="marquee-item">The Diplomat</span><span class="sep"></span>
+          <span class="marquee-item">The Hindu</span><span class="sep"></span>
+          <span class="marquee-item">The Indian Express</span><span class="sep"></span>
+          <span class="marquee-item">Republic Media Network</span><span class="sep"></span>
+          <span class="marquee-item">Network18</span><span class="sep"></span>
+          <span class="marquee-item">Firstpost</span><span class="sep"></span>
+          <span class="marquee-item">InsideOver</span><span class="sep"></span>
+          <span class="marquee-item">Asia Fund Managers</span><span class="sep"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="work" id="work" tabindex="-1">
+
+    <!-- Selected works -->
+    <section class="section" id="selected" aria-labelledby="selected-title">
+      <div class="wrap">
+        <div class="frame">
+          <header class="section-head">
+            <div class="section-title-row">
+              <h2 class="section-title" id="selected-title">Selected works</h2>
+              <p class="section-count">Data and print design, investigations, explainers, reviews</p>
+            </div>
+            <p class="section-deck">Some of my selected works, from full-page data visualisations for The Times of India to business reporting for Zenger News, published on Forbes, investigations for The Diplomat, explainers, data stories and film reviews for The Hindu, and reporting for The Indian Express. Where a story turned on one number, that number sits behind it.</p>
+          </header>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Times of India -->
+    <section class="section outlet-sec" id="toi" aria-labelledby="toi-title">
+      <div class="wrap">
+        <div class="frame">
+          <header class="outlet-head">
+            <h2 class="outlet-title" id="toi-title">The Times of India</h2>
+            <p class="outlet-about">India’s biggest English-language daily, selling about 1.8 million copies a day. Full-page data stories for its print edition, most of them about <a class="term" href="#g-odisha">Odisha</a>, a state of more than 40 million people in eastern India.</p>
+          </header>
+
+          <div class="desk-head">
+            <h3 class="desk-title">Stories</h3>
+            <p class="desk-deck">Full-page data stories I reported and wrote, most of them for the Bhubaneswar edition.</p>
+          </div>
+          <div class="toi-grid">
+            <article class="card page-card page-card--lead" data-tilt data-cursor="read">
+              <figure class="page-shot" aria-hidden="true">
+                <div class="page-mock"><span class="bgstat" data-count-to="139" data-suffix="K">139K</span></div>
+                <img class="page-img" src="clips/cards/flaming-greens.jpg" alt="" loading="lazy" decoding="async">
+              </figure>
+              <div class="page-body">
+                <p class="page-meta">Bhubaneswar edition · Environment</p>
+                <h3 class="page-title"><a class="stretched" href="clips/flaming-greens.html" target="_blank" rel="noopener">Flaming Greens<span class="sr-only"> (opens in a new tab)</span></a></h3>
+                <p class="byline">With Riyan Ramanath. Words, editing and graphics by Sayan Ghosh.</p>
+                <p class="page-summary">Odisha logged more forest fire detections than any other Indian state, ahead of Madhya Pradesh and Chhattisgarh, and its count rose, dipped and rose again before falling by nearly 37 per cent in 2023-24.</p>
+                <p class="behind"><span class="behind-label">The number behind it</span><span class="behind-text"><b>1.39&nbsp;<a class="term above" href="#g-lakh">lakh</a></b>, or 139,000, forest fire detections, ahead of Madhya Pradesh’s 1.23&nbsp;lakh</span></p>
+                <p class="page-source">Data: Forest Survey of India; Odisha State Forest Department</p>
+                <span class="read-cue" aria-hidden="true">See the full page <svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+              </div>
+            </article>
+
+            <article class="card page-card page-card--lead page-card--marigold" data-tilt data-cursor="read">
+              <figure class="page-shot" aria-hidden="true">
+                <div class="page-mock"><span class="bgstat" data-count-to="98" data-suffix="%">98%</span></div>
+                <img class="page-img" src="clips/cards/odisha-mineral-bounty.jpg" alt="" loading="lazy" decoding="async">
+              </figure>
+              <div class="page-body">
+                <p class="page-meta">Mining</p>
+                <h3 class="page-title"><a class="stretched" href="clips/odisha-mineral-bounty.html" target="_blank" rel="noopener">Exploring Odisha’s Mineral Bounty<span class="sr-only"> (opens in a new tab)</span></a></h3>
+                <p class="byline">By Sayan Ghosh</p>
+                <p class="page-summary">Odisha holds most of India’s chromite and bauxite, more than a quarter of its iron ore and nearly a quarter of its coal. The page traced a decade in which the state’s mineral output more than doubled, to 437 million tonnes, while its mining revenue rose ninefold in seven years.</p>
+                <p class="behind"><span class="behind-label">The number behind it</span><span class="behind-text"><b>98%</b> of India’s chromite deposits lie in Odisha, along with 59% of its bauxite</span></p>
+                <p class="page-source">Data: Department of Steel and Mines, Government of Odisha</p>
+                <span class="read-cue" aria-hidden="true">See the full page <svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+              </div>
+            </article>
+
+            <article class="card page-card page-card--marigold" data-tilt data-cursor="read">
+              <figure class="page-shot" aria-hidden="true">
+                <div class="page-mock"><span class="bgstat" data-count-to="11" data-suffix="%">11%</span></div>
+                <img class="page-img" src="clips/cards/when-the-sky-turns-grey.jpg" alt="" loading="lazy" decoding="async" style="object-position: 50% 30%">
+              </figure>
+              <div class="page-body">
+                <p class="page-meta">Bhubaneswar edition · Disasters</p>
+                <h3 class="page-title"><a class="stretched" href="clips/when-the-sky-turns-grey.html" target="_blank" rel="noopener">When the Sky Turns Grey<span class="sr-only"> (opens in a new tab)</span></a></h3>
+                <p class="byline">With Minati Singha and Hemanta Pradhan</p>
+                <p class="page-summary">Why lightning kills so many people in Odisha, where the toll climbed every year from 2019 to 2022, and what villages can do to stay safe.</p>
+                <p class="behind"><span class="behind-label">The number behind it</span><span class="behind-text"><b>11%</b> of India’s lightning deaths from 2016 to 2022 were in Odisha, second only to Madhya Pradesh</span></p>
+                <p class="page-source">Data: NCRB; Government of Odisha</p>
+                <span class="read-cue" aria-hidden="true">See the full page <svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+              </div>
+            </article>
+
+            <article class="card page-card" data-tilt data-cursor="read">
+              <figure class="page-shot" aria-hidden="true">
+                <div class="page-mock"><span class="bgstat" data-count-to="12" data-prefix="−" data-suffix="%">−12%</span></div>
+                <img class="page-img" src="clips/cards/odisha-potato-paradox.jpg" alt="" loading="lazy" decoding="async">
+              </figure>
+              <div class="page-body">
+                <p class="page-meta">Agriculture</p>
+                <h3 class="page-title"><a class="stretched" href="clips/odisha-potato-paradox.html" target="_blank" rel="noopener">Odisha’s Potato Paradox<span class="sr-only"> (opens in a new tab)</span></a></h3>
+                <p class="byline">By Sayan Ghosh</p>
+                <p class="page-summary">Odisha planted 172% more land with potatoes and grew 139% more of them, yet each hectare yielded less, so its prices still swing with supply from neighbouring West Bengal.</p>
+                <p class="behind"><span class="behind-label">The number behind it</span><span class="behind-text"><b>−12%</b> potato yield per hectare, even as the area planted grew 172%</span></p>
+                <p class="page-source">Data: Directorate of Agriculture and Food Production, Odisha; Indiastat; National Sample Survey Office</p>
+                <span class="read-cue" aria-hidden="true">See the full page <svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+              </div>
+            </article>
+
+            <article class="card page-card page-card--wide" data-tilt data-cursor="read">
+              <figure class="page-shot" aria-hidden="true">
+                <div class="page-mock"><span class="bgstat" data-count-to="20.5" data-decimals="1" data-suffix="%">20.5%</span></div>
+                <img class="page-img" src="clips/cards/biden-harris.jpg" alt="" loading="lazy" decoding="async">
+              </figure>
+              <div class="page-body">
+                <p class="page-meta">US election</p>
+                <h3 class="page-title"><a class="stretched" href="clips/biden-harris.html" target="_blank" rel="noopener">Why Biden-Harris Failed Despite This<span class="sr-only"> (opens in a new tab)</span></a></h3>
+                <p class="byline">By Sayan Ghosh</p>
+                <p class="page-summary">Nine indicators set side by side: strong headline numbers such as GDP and market wealth, against what voters felt in prices and real wages.</p>
+                <p class="behind"><span class="behind-label">The number behind it</span><span class="behind-text"><b>20.5%</b> rise in US prices over Biden’s four years, against 7.3% under Trump, even as GDP grew by $2&nbsp;trillion a year and market wealth by 121%</span></p>
+                <p class="page-source">Data: US Bureau of Labor Statistics; Federal Reserve Bank of St Louis; CBRE; US Customs and Border Protection</p>
+                <span class="read-cue" aria-hidden="true">See the full page <svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+              </div>
+            </article>
+          </div>
+
+          <div class="desk-head">
+            <h3 class="desk-title">Graphics</h3>
+            <p class="desk-deck">Charts, infographics and data panels, for my own pages and for colleagues’ stories.</p>
+          </div>
+          <div class="toi-grid">
+            <article class="card page-card" data-tilt data-cursor="read">
+              <figure class="page-shot" aria-hidden="true">
+                <div class="page-mock"><span class="bgstat" data-count-to="19" data-suffix="%">19%</span></div>
+                <img class="page-img" src="clips/cards/womens-safety-shield.jpg" alt="" loading="lazy" decoding="async" style="object-position: 50% 40%">
+              </figure>
+              <div class="page-body">
+                <p class="page-meta">Bhubaneswar edition · Crime and safety</p>
+                <h3 class="page-title"><a class="stretched" href="clips/womens-safety-shield.html" target="_blank" rel="noopener">Women’s Safety Shield<span class="sr-only"> (opens in a new tab)</span></a></h3>
+                <p class="byline">Data and graphics by Sayan Ghosh. Story by Debabrata Mohapatra.</p>
+                <p class="page-summary">The charts behind a page on Odisha’s new measures for women’s safety: the state ranked seventh in India for crimes against women from 2013 to 2022, and its 2024 count was 19% higher than 2019’s.</p>
+                <p class="behind"><span class="behind-label">The number behind it</span><span class="behind-text"><b>19%</b> rise in recorded crimes against women in Odisha between 2019 and 2024</span></p>
+                <p class="page-source">Data: NCRB; Odisha Police</p>
+                <span class="read-cue" aria-hidden="true">See the full page <svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+              </div>
+            </article>
+
+            <article class="card page-card page-card--marigold" data-tilt data-cursor="read">
+              <figure class="page-shot" aria-hidden="true">
+                <div class="page-mock"><span class="bgstat" data-count-to="184">184</span></div>
+                <img class="page-img" src="clips/cards/odia-overseas-electors.jpg" alt="" loading="lazy" decoding="async">
+              </figure>
+              <div class="page-body">
+                <p class="page-meta">Elections</p>
+                <h3 class="page-title"><a class="stretched" href="clips/odia-overseas-electors.html" target="_blank" rel="noopener">Odia Overseas Electors: From 0 to 184 in a Decade<span class="sr-only"> (opens in a new tab)</span></a></h3>
+                <p class="byline">By Sayan Ghosh</p>
+                <p class="page-summary">Registered overseas electors from Odisha went from none in 2014 to 42 in 2019 and 184 in 2024, spread across at least 54 assembly constituencies.</p>
+                <p class="behind"><span class="behind-label">The number behind it</span><span class="behind-text"><b>338%</b> rise in Odisha’s overseas electors between 2019 and 2024</span></p>
+                <p class="page-source">Data: Election Commission of India</p>
+                <span class="read-cue" aria-hidden="true">See the full page <svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+              </div>
+            </article>
+
+            <article class="card page-card page-card--strip" data-tilt data-cursor="read">
+              <figure class="page-shot" aria-hidden="true">
+                <div class="page-mock"><span class="bgstat" data-count-to="9" data-suffix="%">9%</span></div>
+                <img class="page-img" src="clips/cards/odisha-budget-numbers.jpg" alt="" loading="lazy" decoding="async">
+              </figure>
+              <div class="page-body">
+                <p class="page-meta">State budget · Economy</p>
+                <h3 class="page-title"><a class="stretched" href="clips/odisha-budget-numbers.html" target="_blank" rel="noopener">Decoding the Numbers<span class="sr-only"> (opens in a new tab)</span></a></h3>
+                <p class="byline">Text and visualisation by Sayan Ghosh</p>
+                <p class="page-summary">Five charts on Odisha’s economy for the state budget: growth against India’s, growth by sector, the size of state economies, per capita income, and jobs.</p>
+                <p class="behind"><span class="behind-label">The number behind it</span><span class="behind-text"><b>9%</b> gap between Odisha’s per capita income and India’s in 2024-25, down from 24.5% in 2017-18</span></p>
+                <p class="page-source">Data: Reserve Bank of India; Odisha Economic Survey 2024-25</p>
+                <span class="read-cue" aria-hidden="true">See the five charts <svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+              </div>
+            </article>
+          </div>
+
+          <div class="reel-block">
+            <div class="reel-bar">
+              <div>
+                <h3 class="reel-title">Election pages and the data column</h3>
+                <p class="reel-deck">Quick reads of candidates’ <a class="term" href="#g-adr">sworn declarations</a> during the general election, and <a class="term" href="#g-statoistics">Statoistics</a>, the paper’s data column.</p>
+              </div>
+              <div class="reel-nav">
+                <button class="icon-btn" type="button" id="reel-prev" aria-controls="reel" aria-label="Previous pages">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 5l-7 7 7 7"/></svg>
+                </button>
+                <button class="icon-btn" type="button" id="reel-next" aria-controls="reel" aria-label="Next pages">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="reel" id="reel" tabindex="0" role="region" aria-label="Election pages and the data column, scroll sideways">
+              <ul class="reel-track" id="reel-track">
+                <li class="card clip" data-tilt data-cursor="read">
+                  <figure class="page-shot page-shot--clip" aria-hidden="true">
+                    <div class="page-mock"><span class="bgstat" data-count-to="44" data-suffix="%">44%</span></div>
+                    <img class="page-img" src="clips/cards/third-phase-polling.jpg" alt="" loading="lazy" decoding="async">
+                  </figure>
+                  <h4 class="clip-title"><a class="stretched" href="clips/third-phase-polling.html" target="_blank" rel="noopener">3rd Phase Polling: A Quick Look<span class="sr-only"> (opens in a new tab)</span></a></h4>
+                  <p class="byline">By Sayan Ghosh</p>
+                  <p class="behind"><span class="behind-label">The number behind it</span><span class="behind-text"><b>44%</b> of <a class="term above" href="#g-lok-sabha">Lok Sabha</a> candidates in Odisha’s third phase were <a class="term above" href="#g-lakh">crorepatis</a>, worth ₹1&nbsp;crore or more</span></p>
+                  <p class="clip-meta">Data: Association for Democratic Reforms</p>
+                </li>
+                <li class="card clip" data-tilt data-cursor="read">
+                  <figure class="page-shot page-shot--clip" aria-hidden="true">
+                    <div class="page-mock"><span class="bgstat" data-count-to="66">66</span></div>
+                    <img class="page-img" src="clips/cards/fourth-phase-polling.jpg" alt="" loading="lazy" decoding="async">
+                  </figure>
+                  <h4 class="clip-title"><a class="stretched" href="clips/fourth-phase-polling.html" target="_blank" rel="noopener">4th Phase Polling: A Quick Look<span class="sr-only"> (opens in a new tab)</span></a></h4>
+                  <p class="byline">With Riyan Ramanath</p>
+                  <p class="behind"><span class="behind-label">The number behind it</span><span class="behind-text"><b>66</b> Lok&nbsp;Sabha candidates and 394 for the state assembly in Odisha’s final phase</span></p>
+                  <p class="clip-meta">Data: Association for Democratic Reforms</p>
+                </li>
+                <li class="card clip" data-tilt data-cursor="read">
+                  <figure class="page-shot page-shot--clip" aria-hidden="true">
+                    <div class="page-mock"><span class="bgstat" data-count-to="19" data-suffix="%">19%</span></div>
+                    <img class="page-img" src="clips/cards/first-phase-polling.jpg" alt="" loading="lazy" decoding="async">
+                  </figure>
+                  <h4 class="clip-title"><a class="stretched" href="clips/first-phase-polling.html" target="_blank" rel="noopener">1st Phase Polling: A Quick Check<span class="sr-only"> (opens in a new tab)</span></a></h4>
+                  <p class="byline">With Riyan Ramanath</p>
+                  <p class="behind"><span class="behind-label">The number behind it</span><span class="behind-text"><b>19%</b> of Lok&nbsp;Sabha candidates in Odisha’s first phase declared criminal cases</span></p>
+                  <p class="clip-meta">Data: Association for Democratic Reforms</p>
+                </li>
+                <li class="card clip" data-tilt data-cursor="read">
+                  <figure class="page-shot page-shot--clip" aria-hidden="true">
+                    <div class="page-mock"><span class="bgstat" data-count-to="35.3" data-decimals="1" data-prefix="$" data-suffix="bn">$35.3bn</span></div>
+                    <img class="page-img" src="clips/cards/statoistics-us-trade.jpg" alt="" loading="lazy" decoding="async">
+                  </figure>
+                  <h4 class="clip-title"><a class="stretched" href="clips/statoistics-us-trade.html" target="_blank" rel="noopener">India sells much more to US than it buys from it<span class="sr-only"> (opens in a new tab)</span></a></h4>
+                  <p class="byline">By Sayan Ghosh</p>
+                  <p class="behind"><span class="behind-label">The number behind it</span><span class="behind-text"><b>$35.3&nbsp;billion</b> trade surplus with the US in 2023-24, more than double the $16.6&nbsp;billion of 2013-14</span></p>
+                  <p class="clip-meta">Statoistics. Data: <a class="term above" href="#g-sbi">SBI Ecowrap</a></p>
+                </li>
+                <li class="card clip" data-tilt data-cursor="read">
+                  <figure class="page-shot page-shot--clip" aria-hidden="true">
+                    <div class="page-mock"><span class="bgstat bgstat--words">7.5</span></div>
+                    <img class="page-img" src="clips/cards/statoistics-ipl.jpg" alt="" loading="lazy" decoding="async">
+                  </figure>
+                  <h4 class="clip-title"><a class="stretched" href="clips/statoistics-ipl.html" target="_blank" rel="noopener">IPL’s Boundary Rush In Two Trendlines<span class="sr-only"> (opens in a new tab)</span></a></h4>
+                  <p class="byline">By Sayan Ghosh</p>
+                  <p class="behind"><span class="behind-label">The number behind it</span><span class="behind-text">A four every <b>7.5</b> balls in the 2024 <a class="term above" href="#g-ipl">IPL</a>, against every 9 in 2021, and a six every 12.9 balls, against 20.2</span></p>
+                  <p class="clip-meta">Statoistics. Data: ESPNcricinfo</p>
+                </li>
+                <li class="card clip" data-tilt data-cursor="read">
+                  <figure class="page-shot page-shot--clip" aria-hidden="true">
+                    <div class="page-mock"><span class="bgstat" data-count-to="57" data-suffix="%">57%</span></div>
+                    <img class="page-img" src="clips/cards/statoistics-tax.jpg" alt="" loading="lazy" decoding="async">
+                  </figure>
+                  <h4 class="clip-title"><a class="stretched" href="clips/statoistics-tax.html" target="_blank" rel="noopener">Has Indian Tax System Become More Pro-Poor?<span class="sr-only"> (opens in a new tab)</span></a></h4>
+                  <p class="byline">By Sayan Ghosh</p>
+                  <p class="behind"><span class="behind-label">The number behind it</span><span class="behind-text"><b>57%</b> of India’s tax revenue came from direct taxes in 2023-24, the highest share in 14&nbsp;years</span></p>
+                  <p class="clip-meta">Statoistics. Data: <a class="term above" href="#g-sbi">SBI Ecowrap</a></p>
+                </li>
+                <li class="card clip" data-tilt data-cursor="read">
+                  <figure class="page-shot page-shot--clip" aria-hidden="true">
+                    <div class="page-mock"><span class="bgstat" data-count-to="10.9" data-decimals="1" data-suffix="M">10.9M</span></div>
+                    <img class="page-img" src="clips/cards/statoistics-foreign-tourists.jpg" alt="" loading="lazy" decoding="async">
+                  </figure>
+                  <h4 class="clip-title"><a class="stretched" href="clips/statoistics-foreign-tourists.html" target="_blank" rel="noopener">Will Foreign Tourist Arrival in 2024 Beat 2019 Record?<span class="sr-only"> (opens in a new tab)</span></a></h4>
+                  <p class="byline">By Sayan Ghosh</p>
+                  <p class="behind"><span class="behind-label">The number behind it</span><span class="behind-text"><b>10.9&nbsp;million</b> foreign tourists in 2019, the record that 2024 was chasing</span></p>
+                  <p class="clip-meta">Statoistics. Data: Bureau of Immigration</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Forbes, through Zenger News -->
+    <section class="section outlet-sec" id="forbes" aria-labelledby="forbes-title">
+      <div class="wrap">
+        <div class="frame">
+          <header class="outlet-head">
+            <h2 class="outlet-title" id="forbes-title">Forbes</h2>
+            <p class="outlet-about">Published on Forbes through Zenger News, the US news agency I reported for remotely from 2021 to 2023.</p>
+          </header>
+
+          <article class="card feature" data-tilt data-cursor="read">
+            <div class="card-bg" aria-hidden="true"><span class="bgstat bgstat--feature" data-count-to="58">58</span></div>
+            <div class="feature-top">
+              <span class="outlet outlet--on-marigold">Forbes</span>
+              <span class="feature-label">Venture capital</span>
+            </div>
+            <div class="feature-grid">
+              <div class="feature-main">
+                <h3 class="feature-title"><a class="stretched" href="https://www.forbes.com/sites/zengernews/2021/08/30/the-next-big-investment-hub-for-unicornsand-its-not-china/?sh=3346385b63ec" target="_blank" rel="noopener">The Next Big Investment Hub For Unicorns—And It’s Not China<span class="sr-only"> (opens in a new tab)</span></a></h3>
+                <p class="byline">By Sayan Ghosh for Zenger News, published on Forbes</p>
+                <p class="feature-summary">Covid-19, Beijing’s crackdown on its tech firms and unease over Hong Kong made venture investors wary of China. The piece follows the money to India, where funds such as Tiger Global were among the busiest backers of start-ups worth more than $1 billion.</p>
+              </div>
+              <div class="behind behind--feature">
+                <p class="behind-label">The number behind it</p>
+                <p class="behind-text"><b>58</b> Indian start-ups worth $1&nbsp;billion or more, known as unicorns, when the piece ran.</p>
+              </div>
+            </div>
+            <div class="spot-foot">
+              <span class="read-cue" aria-hidden="true">Read the full story <svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Diplomat -->
+    <section class="section outlet-sec" id="diplomat" aria-labelledby="diplomat-title">
+      <div class="wrap">
+        <div class="frame">
+          <header class="outlet-head">
+            <h2 class="outlet-title" id="diplomat-title">The Diplomat</h2>
+            <p class="outlet-about">A current-affairs magazine covering the Indo-Pacific, founded in 2001.</p>
+          </header>
+
+          <div class="dip-grid">
+            <article class="card spot spot--cobalt dip-a" data-tilt data-cursor="read">
+              <div class="card-bg" aria-hidden="true"><span class="bgstat" data-count-to="32" data-suffix="M">32M</span></div>
+              <h3 class="spot-title"><a class="stretched" href="https://thediplomat.com/2021/08/covid-19-shrank-indias-burgeoning-middle-class/" target="_blank" rel="noopener">COVID-19 Shrank India’s Burgeoning Middle Class<span class="sr-only"> (opens in a new tab)</span></a></h3>
+              <p class="byline">By Sayan Ghosh</p>
+              <p class="spot-summary">Pew Research Center estimates show India accounted for about 60 per cent of the fall in the world’s middle class during the pandemic, and added 72 million people to the world’s poor. China lost about 10 million from its middle class.</p>
+              <p class="behind"><span class="behind-label">The number behind it</span><span class="behind-text"><b>32&nbsp;million</b> Indians fell out of the middle class</span></p>
+              <div class="spot-foot"><span class="read-cue" aria-hidden="true">Read the full story <svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M7 17L17 7M9 7h8v8"/></svg></span></div>
+            </article>
+
+            <article class="card spot spot--ink-cobalt spot--big dip-b" data-tilt data-cursor="read">
+              <div class="card-bg" aria-hidden="true"><span class="bgword">Silence</span></div>
+              <p class="spot-kicker">Investigation</p>
+              <h3 class="spot-title"><a class="stretched" href="https://thediplomat.com/2022/02/rape-and-silence-in-kashmirs-jihad/" target="_blank" rel="noopener">Rape and Silence in Kashmir’s Jihad<span class="sr-only"> (opens in a new tab)</span></a></h3>
+              <p class="byline">With Siddharthya Roy and Ojaswin Kathuria</p>
+              <p class="spot-summary">Women across Jammu and Kashmir describe years of sexual abuse by militants, often beginning when they were girls. The investigation sets their accounts beside official crime data, which showed violence against women rising, and asks why the crimes went unacknowledged for so long.</p>
+              <p class="spot-method">Reported through survivor interviews, source verification and official crime data.</p>
+              <div class="spot-foot">
+                <span class="read-cue" aria-hidden="true">Read the full story <svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+                <a class="sub-link above" href="https://it.insideover.com/reportage/donne/stupro-legittimo-silenzio-colpevole-nella-jihad-del-kashmir.html" target="_blank" rel="noopener">Read the Italian edition on InsideOver<span class="sr-only"> (opens in a new tab)</span></a>
+              </div>
+            </article>
+
+            <article class="card spot spot--paper-cobalt dip-c" data-tilt data-cursor="read">
+              <div class="card-bg" aria-hidden="true"><span class="bgstat">No.1</span></div>
+              <h3 class="spot-title"><a class="stretched" href="https://thediplomat.com/2019/04/tuberculosis-indias-silent-epidemic/" target="_blank" rel="noopener">Tuberculosis: India’s Silent Epidemic<span class="sr-only"> (opens in a new tab)</span></a></h3>
+              <p class="byline">With Siddharthya Roy</p>
+              <p class="spot-summary">India has more people living with tuberculosis than any other country. The report looks at the scale of a disease that draws little public attention.</p>
+              <p class="behind"><span class="behind-label">The number behind it</span><span class="behind-text"><b>No.&nbsp;1</b> for tuberculosis cases worldwide</span></p>
+              <div class="spot-foot"><span class="read-cue" aria-hidden="true">Read the full story <svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M7 17L17 7M9 7h8v8"/></svg></span></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Hindu: explainers, the data desk, film and television, and reporting -->
+    <section class="section outlet-sec" id="hindu" aria-labelledby="hindu-title">
+      <div class="wrap">
+        <div class="frame">
+          <header class="outlet-head">
+            <h2 class="outlet-title" id="hindu-title">The Hindu</h2>
+            <p class="outlet-about">A national daily founded in Madras, now Chennai, in 1878, often described as one of India’s newspapers of record. Explainers, Data Point stories, film and television reviews and news reporting from my years on its desk.</p>
+          </header>
+
+          <div class="desk-block">
+            <div class="desk-head">
+              <h3 class="desk-title">Explainers and reporting</h3>
+              <p class="desk-deck">Science and technology explained for general readers, and a news report on sanitation workers during the pandemic.</p>
+            </div>
+            <div class="explainer-grid">
+              <article class="card spot spot--ink explainer" data-tilt data-cursor="read">
+                <div class="card-bg" aria-hidden="true"><span class="bgword">Breach</span></div>
+                <p class="spot-kicker">Technology</p>
+                <h4 class="spot-title"><a class="stretched" href="https://www.thehindu.com/sci-tech/technology/internet/explainer-how-facebooks-recent-data-breach-affect-its-users/article34324019.ece" target="_blank" rel="noopener">How Facebook’s recent data breach affects its users<span class="sr-only"> (opens in a new tab)</span></a></h4>
+                <p class="byline">By Sayan Ghosh</p>
+                <p class="spot-summary">What the 2021 leak of Facebook users’ personal details meant for the people whose data was exposed.</p>
+                <div class="spot-foot"><span class="read-cue" aria-hidden="true">Read the explainer <svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M7 17L17 7M9 7h8v8"/></svg></span></div>
+              </article>
+
+              <article class="card spot spot--ink explainer" data-tilt data-cursor="read">
+                <div class="card-bg" aria-hidden="true"><span class="bgword">D614G</span></div>
+                <p class="spot-kicker">Science</p>
+                <h4 class="spot-title"><a class="stretched" href="https://www.thehindu.com/sci-tech/science/what-is-the-d614g-mutation-in-coronavirus/article32992120.ece" target="_blank" rel="noopener">What is the D614G mutation in coronavirus?<span class="sr-only"> (opens in a new tab)</span></a></h4>
+                <p class="byline">By Sayan Ghosh</p>
+                <p class="spot-summary">An explainer on D614G, the change to the coronavirus’s spike protein that became the most common form of the virus worldwide in 2020.</p>
+                <div class="spot-foot"><span class="read-cue" aria-hidden="true">Read the explainer <svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M7 17L17 7M9 7h8v8"/></svg></span></div>
+              </article>
+
+              <article class="card spot spot--ink report" data-tilt data-cursor="read">
+                <div class="card-bg" aria-hidden="true"><span class="bgword">Survey</span></div>
+                <p class="spot-kicker">Reporting · Public health</p>
+                <h4 class="spot-title"><a class="stretched" href="https://www.thehindu.com/news/national/little-protection-for-sanitation-workers-during-covid-19-pandemic-finds-survey/article32550790.ece" target="_blank" rel="noopener">Little protection for sanitation workers during COVID-19 pandemic, finds survey<span class="sr-only"> (opens in a new tab)</span></a></h4>
+                <p class="byline">By Sayan Ghosh</p>
+                <p class="spot-summary">A survey found that sanitation workers had little protection during the COVID-19 pandemic.</p>
+                <div class="spot-foot"><span class="read-cue" aria-hidden="true">Read the story <svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M7 17L17 7M9 7h8v8"/></svg></span></div>
+              </article>
+            </div>
+          </div>
+
+          <div class="desk-block">
+            <div class="desk-head">
+              <h3 class="desk-title">Data desk</h3>
+              <p class="desk-deck">Data Point stories from The Hindu’s data pages, built on official figures, with one of the News in Numbers round-ups.</p>
+            </div>
+            <div class="explainer-grid datapoint-grid">
+              <article class="card spot spot--ink datapoint" data-tilt data-cursor="read">
+                <div class="card-bg" aria-hidden="true"><span class="bgword">Votes</span></div>
+                <p class="spot-kicker">Data Point · Elections</p>
+                <h4 class="spot-title"><a class="stretched" href="https://www.thehindu.com/data/data-jharkhand-election-2019-jmm-victorious-on-the-back-of-bjps-dipping-urban-vote-share/article61602865.ece" target="_blank" rel="noopener">Jharkhand election 2019: JMM victorious on the back of BJP’s dipping urban vote share<span class="sr-only"> (opens in a new tab)</span></a></h4>
+                <p class="byline">By Sayan Ghosh</p>
+                <p class="spot-summary">Constituency-level vote shares across rural, semi-urban and urban seats show how falling urban support for the <a class="term above" href="#g-bjp">BJP</a> helped the <a class="term above" href="#g-bjp">JMM</a>-led alliance win <a class="term above" href="#g-odisha">Jharkhand</a>.</p>
+                <div class="spot-foot"><span class="read-cue" aria-hidden="true">Read the story <svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M7 17L17 7M9 7h8v8"/></svg></span></div>
+              </article>
+
+              <article class="card spot spot--ink datapoint" data-tilt data-cursor="read">
+                <div class="card-bg" aria-hidden="true"><span class="bgstat">112</span></div>
+                <p class="spot-kicker">Data Point · Gender</p>
+                <h4 class="spot-title"><a class="stretched" href="https://www.thehindu.com/data/data-where-does-india-stand-in-the-global-gender-gap-index/article30494545.ece" target="_blank" rel="noopener">Where does India stand in the Global Gender Gap Index?<span class="sr-only"> (opens in a new tab)</span></a></h4>
+                <p class="byline">By Sayan Ghosh</p>
+                <p class="spot-summary">India’s place in the World Economic Forum’s ranking, compared across economic participation, education, health and political empowerment, and against global and regional benchmarks.</p>
+                <div class="spot-foot"><span class="read-cue" aria-hidden="true">Read the story <svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M7 17L17 7M9 7h8v8"/></svg></span></div>
+              </article>
+
+              <article class="card spot spot--ink datapoint" data-tilt data-cursor="read">
+                <div class="card-bg" aria-hidden="true"><span class="bgword">2018</span></div>
+                <p class="spot-kicker">Data Point · Security</p>
+                <h4 class="spot-title"><a class="stretched" href="https://www.thehindu.com/data/what-was-the-state-of-terrorism-in-the-world-in-2018/article30337470.ece" target="_blank" rel="noopener">What was the state of terrorism in the world in 2018?<span class="sr-only"> (opens in a new tab)</span></a></h4>
+                <p class="byline">By Sayan Ghosh</p>
+                <p class="spot-summary">Global Terrorism Index data showed a year that ran against intuition: terrorism reached more countries even as the number of deaths fell.</p>
+                <div class="spot-foot"><span class="read-cue" aria-hidden="true">Read the story <svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M7 17L17 7M9 7h8v8"/></svg></span></div>
+              </article>
+
+              <article class="card spot spot--ink" data-tilt data-cursor="read">
+                <p class="spot-kicker">News in Numbers</p>
+                <h4 class="spot-title"><a class="stretched" href="https://www.thehindu.com/data/news-in-numbers-indias-hiv-load-maratha-reservation-and-more/article25635965.ece" target="_blank" rel="noopener">News in Numbers: India’s HIV load, Maratha reservation, and more<span class="sr-only"> (opens in a new tab)</span></a></h4>
+                <p class="byline">With Sumant Sen</p>
+                <p class="spot-summary">One of the paper’s round-ups of the figures behind the week’s news. The rest of the series is in the archive.</p>
+                <div class="spot-foot"><span class="read-cue" aria-hidden="true">Read the story <svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M7 17L17 7M9 7h8v8"/></svg></span></div>
+              </article>
+            </div>
+          </div>
+
+          <div class="desk-block">
+            <div class="desk-head">
+              <h3 class="desk-title">Film and television</h3>
+              <p class="desk-deck">Reviews and essays for the paper’s film pages, from classic American television to new Indian streaming releases.</p>
+            </div>
+            <div class="screen-grid">
+              <article class="card spot spot--paper-ink" data-tilt data-cursor="read">
+                <div class="card-bg" aria-hidden="true"><span class="bgstat">1959</span></div>
+                <p class="spot-kicker">Television</p>
+                <h4 class="spot-title"><a class="stretched" href="https://www.thehindu.com/entertainment/movies/journey-into-the-twilight-zone-a-look-at-rod-serlings-timeless-sci-fi-masterpiece/article31943660.ece" target="_blank" rel="noopener">Journey into the Twilight Zone: A look at Rod Serling’s timeless sci-fi masterpiece<span class="sr-only"> (opens in a new tab)</span></a></h4>
+                <p class="byline">By Sayan Ghosh</p>
+                <blockquote class="pull"><p>“The original creation by Rod Serling has no peers.”</p></blockquote>
+                <p class="spot-summary">On the anthology series Rod Serling created for CBS, first broadcast in 1959.</p>
+                <div class="spot-foot"><span class="read-cue" aria-hidden="true">Read the story <svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M7 17L17 7M9 7h8v8"/></svg></span></div>
+              </article>
+
+              <article class="card spot spot--paper-ink" data-tilt data-cursor="read">
+                <p class="spot-kicker">Documentaries</p>
+                <h4 class="spot-title"><a class="stretched" href="https://www.thehindu.com/entertainment/movies/a-new-era-in-documentaries-the-advent-of-the-docu-series/article35315870.ece" target="_blank" rel="noopener">A new era in documentaries: The advent of the docu-series<span class="sr-only"> (opens in a new tab)</span></a></h4>
+                <p class="byline">By Sayan Ghosh</p>
+                <p class="spot-summary">On the docu-series, and the new era it has opened for documentaries.</p>
+                <div class="spot-foot"><span class="read-cue" aria-hidden="true">Read the story <svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M7 17L17 7M9 7h8v8"/></svg></span></div>
+              </article>
+
+              <!-- Films Division: add its card here, in the same shape as the cards either side -->
+
+              <article class="card spot spot--paper-ink" data-tilt data-cursor="read">
+                <p class="spot-kicker">Documentary</p>
+                <h4 class="spot-title"><a class="stretched" href="https://www.thehindu.com/entertainment/movies/the-haunting-tale-of-the-friedmans/article32611551.ece" target="_blank" rel="noopener">The haunting tale of the Friedmans<span class="sr-only"> (opens in a new tab)</span></a></h4>
+                <p class="byline">By Sayan Ghosh</p>
+                <p class="spot-summary">On Capturing the Friedmans, Andrew Jarecki’s 2003 documentary about a Long Island family and the criminal case that tore it apart.</p>
+                <div class="spot-foot"><span class="read-cue" aria-hidden="true">Read the story <svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M7 17L17 7M9 7h8v8"/></svg></span></div>
+              </article>
+
+              <article class="card spot spot--clipboard">
+                <p class="spot-kicker">Reviews</p>
+                <h4 class="spot-title">Netflix in 2021</h4>
+                <p class="spot-summary">Three reviews, each with the verdict from its headline.</p>
+                <ul class="clippings">
+                  <li><a class="clipping" href="https://www.thehindu.com/entertainment/movies/pagglait-movie-review-an-insightful-tale-of-repression-and-tragedy-taking-pride-in-its-simplicity/article34169701.ece" target="_blank" rel="noopener" data-cursor="read"><span class="clipping-no" aria-hidden="true">01</span><span class="clipping-text"><b>Pagglait</b>: an insightful tale of repression and tragedy</span><span class="sr-only"> (opens in a new tab)</span></a></li>
+                  <li><a class="clipping" href="https://www.thehindu.com/entertainment/movies/ajeeb-daastaans-review-netflix-anthology-fails-to-break-new-ground-but-is-an-earnest-attempt/article34333340.ece" target="_blank" rel="noopener" data-cursor="read"><span class="clipping-no" aria-hidden="true">02</span><span class="clipping-text"><b>Ajeeb Daastaans</b>: no new ground, but an earnest attempt</span><span class="sr-only"> (opens in a new tab)</span></a></li>
+                  <li><a class="clipping" href="https://www.thehindu.com/entertainment/movies/searching-for-sheela-review-a-problematic-take-on-ma-anand-sheelas-complex-legacy/article34390472.ece" target="_blank" rel="noopener" data-cursor="read"><span class="clipping-no" aria-hidden="true">03</span><span class="clipping-text"><b>Searching for Sheela</b>: a problematic take on a complex legacy</span><span class="sr-only"> (opens in a new tab)</span></a></li>
+                </ul>
+                <p class="more-reviews">More on Rotten Tomatoes, including Scam 1992, Bombay Begums and Tandav: <a class="above" href="https://www.rottentomatoes.com/critics/sayan-ghosh/movies" target="_blank" rel="noopener">film reviews<span class="sr-only"> (opens in a new tab)</span></a> and <a class="above" href="https://www.rottentomatoes.com/critics/sayan-ghosh/tv" target="_blank" rel="noopener">television reviews<span class="sr-only"> (opens in a new tab)</span></a>.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="desk-block">
+            <div class="desk-head">
+              <h3 class="desk-title">More reporting</h3>
+              <p class="desk-deck">A news report for the paper on the rehabilitation of manual scavengers.</p>
+            </div>
+            <div class="explainer-grid datapoint-grid">
+              <article class="card spot spot--ink datapoint" data-tilt data-cursor="read">
+                <div class="card-bg" aria-hidden="true"><span class="bgstat">13,973</span></div>
+                <p class="spot-kicker">Reporting · Social justice</p>
+                <h4 class="spot-title"><a class="stretched" href="https://www.thehindu.com/news/national/manual-scavenger-rehabilitation-budget-drops/article25709845.ece" target="_blank" rel="noopener">Manual scavenger rehabilitation budget drops<span class="sr-only"> (opens in a new tab)</span></a></h4>
+                <p class="byline">With Sumant Sen</p>
+                <p class="spot-summary">India had identified 13,973 manual scavengers by December 2018, 11,563 of them in Uttar Pradesh. Sewer deaths went on, and the budget for their self-employment schemes fell from ₹448&nbsp;<a class="term above" href="#g-lakh">crore</a> in 2014-15 to ₹5&nbsp;crore in 2017-18.</p>
+                <div class="spot-foot"><span class="read-cue" aria-hidden="true">Read the story <svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M7 17L17 7M9 7h8v8"/></svg></span></div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Indian Express -->
+    <section class="section outlet-sec" id="express" aria-labelledby="express-title">
+      <div class="wrap">
+        <div class="frame">
+          <header class="outlet-head">
+            <h2 class="outlet-title" id="express-title">The Indian Express</h2>
+            <p class="outlet-about">A national daily founded in 1932 that led the Panama Papers investigation in India. I wrote for it as a master’s student in Pune.</p>
+          </header>
+
+          <div class="express-grid">
+            <article class="card spot spot--paper-ink" data-tilt data-cursor="read">
+              <div class="card-bg" aria-hidden="true"><span class="bgstat" data-count-to="20">20</span></div>
+              <p class="spot-kicker">Education</p>
+              <h3 class="spot-title"><a class="stretched" href="https://indianexpress.com/article/education/osmanabads-girish-badole-ranks-20-in-upsc-exam/" target="_blank" rel="noopener">Osmanabad’s Girish Badole ranks 20 in UPSC exam<span class="sr-only"> (opens in a new tab)</span></a></h3>
+              <p class="spot-summary">Girish Badole, from Osmanabad in Maharashtra, came 20th in India’s civil services exam, run by the <a class="term above" href="#g-upsc">UPSC</a>, which more than half a million people sit each year.</p>
+              <p class="behind"><span class="behind-label">The number behind it</span><span class="behind-text"><b>20th</b> in the civil services exam</span></p>
+              <div class="spot-foot"><span class="read-cue" aria-hidden="true">Read the story <svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M7 17L17 7M9 7h8v8"/></svg></span></div>
+            </article>
+
+            <article class="card spot spot--clipboard">
+              <p class="spot-kicker">Print</p>
+              <h3 class="spot-title">Three print clippings</h3>
+              <p class="spot-summary">Stories from The Indian Express print edition, clipped from the paper’s e-paper.</p>
+              <ul class="clippings">
+                <li><a class="clipping" href="http://epaper.indianexpress.com/c/35928878" target="_blank" rel="noopener" data-cursor="read"><span class="clipping-no" aria-hidden="true">01</span>Open the first clipping<span class="sr-only"> (opens in a new tab)</span></a></li>
+                <li><a class="clipping" href="http://epaper.indianexpress.com/c/35928942" target="_blank" rel="noopener" data-cursor="read"><span class="clipping-no" aria-hidden="true">02</span>Open the second clipping<span class="sr-only"> (opens in a new tab)</span></a></li>
+                <li><a class="clipping" href="http://epaper.indianexpress.com/c/35928861" target="_blank" rel="noopener" data-cursor="read"><span class="clipping-no" aria-hidden="true">03</span>Open the third clipping<span class="sr-only"> (opens in a new tab)</span></a></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Second marquee: beats and skills -->
+  <section class="band band--marigold" aria-label="Beats and skills">
+    <p class="sr-only">Beats and skills: elections, geopolitics, financial journalism, data analysis, fact-checking, visual storytelling, print-page design, digital video and Python.</p>
+    <div class="marquee" data-marquee data-speed="30" data-direction="1" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span class="marquee-item">Elections</span><span class="sep"></span>
+          <span class="marquee-item">Geopolitics</span><span class="sep"></span>
+          <span class="marquee-item">Financial journalism</span><span class="sep"></span>
+          <span class="marquee-item">Data analysis</span><span class="sep"></span>
+          <span class="marquee-item">Fact-checking</span><span class="sep"></span>
+          <span class="marquee-item">Visual storytelling</span><span class="sep"></span>
+          <span class="marquee-item">Print-page design</span><span class="sep"></span>
+          <span class="marquee-item">Digital video</span><span class="sep"></span>
+          <span class="marquee-item">Python</span><span class="sep"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Journey: the career as a railway line, ending in Cardiff -->
+  <section class="section journey" id="journey" aria-labelledby="journey-title">
+    <div class="wrap">
+      <div class="frame">
+        <header class="section-head">
+          <div class="section-title-row">
+            <h2 class="section-title" id="journey-title">From Delhi to Chennai and everything in between</h2>
+          </div>
+          <p class="section-deck">Seven years on Indian news desks, with data work running alongside, and a line that now runs to Cardiff.</p>
+        </header>
+
+        <dl class="stats" id="stats">
+          <div class="stat">
+            <dt>Years in Indian newsrooms</dt>
+            <dd><span class="num" data-count="7" aria-hidden="true">7</span><span class="sr-only">7</span></dd>
+          </div>
+          <div class="stat">
+            <dt>Newsrooms, from Delhi to Chennai and everything in between, and now Cardiff</dt>
+            <dd><span class="num" data-count="6" aria-hidden="true">6</span><span class="sr-only">6</span></dd>
+          </div>
+          <div class="stat">
+            <dt>Publications that have run my work</dt>
+            <dd><span class="num" data-count="7" aria-hidden="true">7</span><span class="sr-only">7</span></dd>
+          </div>
+        </dl>
+
+        <div class="legend" aria-hidden="true">
+          <span class="legend-key">Newsroom</span>
+          <span class="legend-key legend-key--data">Data</span>
+        </div>
+
+        <ol class="timeline" id="timeline">
+          <li class="tl-item">
+            <span class="tl-node" aria-hidden="true"></span>
+            <div class="sign" role="img" aria-label="Station sign: Kolkata">
+              <span class="sign-line" lang="bn">কলকাতা</span>
+              <span class="sign-line" lang="hi">कोलकाता</span>
+              <span class="sign-en">Kolkata</span>
+            </div>
+            <div class="tl-lanes">
+              <div class="lane lane--desk">
+                <p class="lane-label">Study</p>
+                <h3 class="lane-title">BA, Political Science</h3>
+                <p class="lane-org"><a class="term" href="#g-jadavpur">Jadavpur University</a></p>
+                <p>A public university, ranked first among India’s state universities in the government’s 2025 national rankings.</p>
+              </div>
+              <div class="lane lane--blank" aria-hidden="true"></div>
+            </div>
+          </li>
+          <li class="tl-item">
+            <span class="tl-node" aria-hidden="true"></span>
+            <div class="sign" role="img" aria-label="Station sign: Pune">
+              <span class="sign-line" lang="mr">पुणे</span>
+              <span class="sign-en">Pune</span>
+            </div>
+            <div class="tl-lanes">
+              <div class="lane lane--desk">
+                <p class="lane-label">Study</p>
+                <h3 class="lane-title">MA, Mass Communication (Journalism)</h3>
+                <p class="lane-org"><a class="term" href="#g-simc">Symbiosis Institute of Media and Communication</a></p>
+                <p>Wrote for The Indian Express, and for The Diplomat with Siddharthya Roy: a report on India’s tuberculosis epidemic.</p>
+              </div>
+              <div class="lane lane--blank" aria-hidden="true"></div>
+            </div>
+          </li>
+          <li class="tl-item">
+            <span class="tl-node" aria-hidden="true"></span>
+            <div class="sign" role="img" aria-label="Station sign: Mumbai">
+              <span class="sign-line" lang="mr">मुंबई</span>
+              <span class="sign-en">Mumbai</span>
+            </div>
+            <div class="tl-lanes">
+              <div class="lane lane--desk">
+                <p class="lane-label">Newsroom</p>
+                <h3 class="lane-title">News Trainee and Sub-editor</h3>
+                <p class="lane-org"><a class="term" href="#g-network18">Network18 and Firstpost</a></p>
+                <p>Edited news for clarity and accuracy, published breaking news in real time and ran social media accounts.</p>
+              </div>
+              <div class="lane lane--blank" aria-hidden="true"></div>
+            </div>
+          </li>
+          <li class="tl-item">
+            <span class="tl-node" aria-hidden="true"></span>
+            <div class="sign" role="img" aria-label="Station sign: Chennai">
+              <span class="sign-line" lang="ta">சென்னை</span>
+              <span class="sign-line" lang="hi">चेन्नई</span>
+              <span class="sign-en">Chennai</span>
+            </div>
+            <div class="tl-lanes">
+              <div class="lane lane--desk">
+                <p class="lane-label">Newsroom</p>
+                <h3 class="lane-title"><a class="term" href="#g-subeditor">Sub-editor</a></h3>
+                <p class="lane-org">The Hindu</p>
+                <p>Edited copy for accuracy and house style, worked with writers to make their stories clearer, and wrote explainers and film and television reviews.</p>
+              </div>
+              <div class="lane lane--data">
+                <p class="lane-label">Data</p>
+                <p>Published Data Point stories on state elections, the Global Gender Gap Index, terrorism and manual scavenging, along with the News in Numbers series.</p>
+              </div>
+            </div>
+          </li>
+          <li class="tl-item tl-item--remote">
+            <span class="tl-node" aria-hidden="true"></span>
+            <div class="sign sign--remote" role="img" aria-label="Remote, for a Washington, DC, desk">
+              <span class="sign-line">Remote</span>
+              <span class="sign-en">Washington, DC</span>
+            </div>
+            <div class="tl-lanes">
+              <div class="lane lane--desk">
+                <p class="lane-label">Newsroom</p>
+                <h3 class="lane-title">Correspondent</h3>
+                <p class="lane-org">Published in Forbes and The Diplomat</p>
+                <p>Wrote and edited news reports and long reads on India’s economy, start-ups and security.</p>
+              </div>
+              <div class="lane lane--data">
+                <p class="lane-label">Data</p>
+                <p>Data-led reporting on India’s economy, and co-reported the Kashmir investigation using official crime data alongside survivor interviews.</p>
+              </div>
+            </div>
+          </li>
+          <li class="tl-item tl-item--remote">
+            <span class="tl-node" aria-hidden="true"></span>
+            <div class="sign sign--remote" role="img" aria-label="Remote, for a German publisher">
+              <span class="sign-line">Remote</span>
+              <span class="sign-en">Germany</span>
+            </div>
+            <div class="tl-lanes">
+              <div class="lane lane--desk">
+                <p class="lane-label">Newsroom</p>
+                <h3 class="lane-title">Financial Editor</h3>
+                <p class="lane-org">VaR Value Research &amp; Media</p>
+                <p>Edited and wrote investment articles for professional investors, and interviewed industry experts.</p>
+              </div>
+              <div class="lane lane--data">
+                <p class="lane-label">Data</p>
+                <p>News and analysis on capital-market trends, researched for accuracy.</p>
+              </div>
+            </div>
+          </li>
+          <li class="tl-item">
+            <span class="tl-node" aria-hidden="true"></span>
+            <div class="sign" role="img" aria-label="Station sign: Kolkata">
+              <span class="sign-line" lang="bn">কলকাতা</span>
+              <span class="sign-line" lang="hi">कोलकाता</span>
+              <span class="sign-en">Kolkata</span>
+            </div>
+            <div class="tl-lanes">
+              <div class="lane lane--desk">
+                <p class="lane-label">Newsroom</p>
+                <h3 class="lane-title">Senior Digital Content Producer</h3>
+                <p class="lane-org">The Times of India</p>
+                <p>Wrote and edited articles, and designed print pages for the eastern and north-eastern editions.</p>
+              </div>
+              <div class="lane lane--data">
+                <p class="lane-label">Data</p>
+                <p>Led the newsroom’s data strategy, guided reporters through sourcing, cleaning and analysing datasets, and designed full-page data stories for print.</p>
+              </div>
+            </div>
+          </li>
+          <li class="tl-item">
+            <span class="tl-node" aria-hidden="true"></span>
+            <div class="sign" role="img" aria-label="Station sign: Noida">
+              <span class="sign-line" lang="hi">नोएडा</span>
+              <span class="sign-en">Noida</span>
+            </div>
+            <div class="tl-lanes">
+              <div class="lane lane--desk">
+                <p class="lane-label">Newsroom</p>
+                <h3 class="lane-title">Assistant Editor</h3>
+                <p class="lane-org"><a class="term" href="#g-republic">Republic Media Network</a></p>
+                <p>Led shifts on the digital videos desk, planned coverage and oversaw production from start to finish.</p>
+              </div>
+              <div class="lane lane--data">
+                <p class="lane-label">Data</p>
+                <p>Used data to turn geopolitical and national stories into sharp, fact-based video.</p>
+              </div>
+            </div>
+          </li>
+          <li class="tl-item tl-item--now">
+            <span class="tl-node" aria-hidden="true"></span>
+            <div class="sign sign--cymru" role="img" aria-label="Station sign: Caerdydd, Cardiff">
+              <span class="sign-line" lang="cy">Caerdydd</span>
+              <span class="sign-en">Cardiff</span>
+            </div>
+            <div class="tl-lanes">
+              <div class="lane lane--desk">
+                <p class="lane-label">Now</p>
+                <h3 class="lane-title">MSc, Computational and Data Journalism</h3>
+                <p class="lane-org">Cardiff University</p>
+                <p>Taught jointly by the School of Journalism, Media and Culture and the School of Computer Science and Informatics.</p>
+              </div>
+              <div class="lane lane--data">
+                <p class="lane-label">Data</p>
+                <p>Learning Python, web development, data visualisation and reproducible reporting.</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-fill" aria-hidden="true" id="timeline-fill"></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Archive: every piece, searchable and filterable -->
+  <section class="section" id="archive" aria-labelledby="archive-title">
+    <div class="wrap">
+      <div class="frame">
+        <header class="section-head">
+          <div class="section-title-row">
+            <h2 class="section-title" id="archive-title">Archive</h2>
+            <p class="section-count">Every outlet, one search box</p>
+          </div>
+          <p class="section-deck">Everything above and more, in one place: reviews, round-ups and pieces for other outlets. Search by word, or filter by beat.</p>
+        </header>
+
+        <div class="archive-tools">
+          <div>
+            <label class="field-label" for="archive-search">Search the archive</label>
+            <div class="search">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>
+              <input id="archive-search" type="search" placeholder="Try Kashmir, Facebook or Netflix" autocomplete="off" spellcheck="false">
+            </div>
+          </div>
+          <div class="chips" role="group" aria-label="Filter the archive by beat" id="archive-filters"></div>
+          <p class="archive-count" id="archive-count" role="status" aria-live="polite">Showing everything</p>
+        </div>
+
+        <ul class="bento" id="archive-grid"></ul>
+
+        <div class="empty" id="archive-empty" hidden>
+          <p class="empty-title" id="archive-empty-title">Nothing matches that search</p>
+          <p>Try a shorter word, or clear the search and filters to see everything.</p>
+          <button class="btn" type="button" id="archive-clear">Clear search and filters</button>
+        </div>
+
+        <noscript>
+          <p class="noscript-note">The archive search needs JavaScript. Every story is listed in the sections above.</p>
+        </noscript>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guide for readers outside India -->
+  <section class="section guide" id="guide" aria-labelledby="guide-title">
+    <div class="wrap">
+      <div class="frame">
+        <header class="section-head">
+          <div class="section-title-row">
+            <h2 class="section-title" id="guide-title">For readers outside India</h2>
+          </div>
+          <p class="section-deck">A quick guide to the newspapers, institutions and terms on this page.</p>
+        </header>
+
+        <div class="guide-groups">
+          <section class="guide-group" aria-labelledby="gh-news">
+            <h3 class="guide-group-title" id="gh-news">Newspapers and broadcasters</h3>
+            <dl class="gloss">
+              <div class="gloss-entry" id="g-toi"><dt class="gloss-term">The Times of India</dt><dd class="gloss-def">India’s biggest English-language daily, selling about 1.8 million copies a day. It was founded in Bombay, now Mumbai, in 1838.</dd></div>
+              <div class="gloss-entry" id="g-hindu"><dt class="gloss-term">The Hindu</dt><dd class="gloss-def">A national English-language daily founded in Madras, now Chennai, in 1878, and often described as one of India’s newspapers of record.</dd></div>
+              <div class="gloss-entry" id="g-express"><dt class="gloss-term">The Indian Express</dt><dd class="gloss-def">A national daily founded in 1932. It led the Panama Papers investigation in India.</dd></div>
+              <div class="gloss-entry" id="g-republic"><dt class="gloss-term">Republic Media Network</dt><dd class="gloss-def">The company behind Republic TV, an English-language news channel launched in 2017, with sister channels in Hindi and other Indian languages.</dd></div>
+              <div class="gloss-entry" id="g-network18"><dt class="gloss-term">Network18 and Firstpost</dt><dd class="gloss-def">Network18 is a media group owned by Reliance Industries. Firstpost is its news website.</dd></div>
+            </dl>
+          </section>
+
+          <section class="guide-group" aria-labelledby="gh-uni">
+            <h3 class="guide-group-title" id="gh-uni">Universities</h3>
+            <dl class="gloss">
+              <div class="gloss-entry" id="g-jadavpur"><dt class="gloss-term">Jadavpur University</dt><dd class="gloss-def">A public university in Kolkata, ranked first among India’s state universities in the government’s 2025 national rankings.</dd></div>
+              <div class="gloss-entry" id="g-simc"><dt class="gloss-term">Symbiosis Institute of Media and Communication</dt><dd class="gloss-def">The media school of Symbiosis International University, a private university in Pune.</dd></div>
+            </dl>
+          </section>
+
+          <section class="guide-group" aria-labelledby="gh-public">
+            <h3 class="guide-group-title" id="gh-public">Public bodies and data sources</h3>
+            <dl class="gloss">
+              <div class="gloss-entry" id="g-adr"><dt class="gloss-term">Association for Democratic Reforms (ADR)</dt><dd class="gloss-def">A non-partisan nonprofit, set up in 1999 by professors at the Indian Institute of Management Ahmedabad. It analyses the sworn declarations, or affidavits, that election candidates must file about their assets, education and criminal cases.</dd></div>
+              <div class="gloss-entry" id="g-upsc"><dt class="gloss-term">Union Public Service Commission (UPSC)</dt><dd class="gloss-def">Runs the exam that selects India’s senior civil servants. More than half a million people sit its first stage each year.</dd></div>
+              <div class="gloss-entry" id="g-sbi"><dt class="gloss-term">SBI Ecowrap</dt><dd class="gloss-def">Economic research published by the State Bank of India, the country’s largest bank.</dd></div>
+              <div class="gloss-entry" id="g-fsi"><dt class="gloss-term">Forest Survey of India</dt><dd class="gloss-def">A government agency that maps the country’s forests and sends out forest fire alerts based on satellite data.</dd></div>
+            </dl>
+          </section>
+
+          <section class="guide-group" aria-labelledby="gh-words">
+            <h3 class="guide-group-title" id="gh-words">Places, politics and words</h3>
+            <dl class="gloss">
+              <div class="gloss-entry" id="g-lakh"><dt class="gloss-term">Lakh and crore</dt><dd class="gloss-def">Indian units for large numbers. A lakh is 100,000 and a crore is 10 million, so ₹1 crore is roughly £80,000 or $100,000. A crorepati is someone worth a crore or more.</dd></div>
+              <div class="gloss-entry" id="g-lok-sabha"><dt class="gloss-term">Lok Sabha</dt><dd class="gloss-def">The elected lower house of India’s parliament, comparable to the House of Commons or the House of Representatives. Each state also elects its own assembly, and general elections are held in phases over several weeks.</dd></div>
+              <div class="gloss-entry" id="g-bjp"><dt class="gloss-term">BJP and JMM</dt><dd class="gloss-def">The Bharatiya Janata Party (BJP) leads India’s national government. The Jharkhand Mukti Morcha (JMM) is a regional party in the state of Jharkhand.</dd></div>
+              <div class="gloss-entry" id="g-odisha"><dt class="gloss-term">Odisha and Jharkhand</dt><dd class="gloss-def">Neighbouring states in eastern India, home to more than 40 million and more than 30 million people.</dd></div>
+              <div class="gloss-entry" id="g-noida"><dt class="gloss-term">Noida</dt><dd class="gloss-def">A city on Delhi’s south-eastern edge, part of the capital region and home to many national newsrooms.</dd></div>
+              <div class="gloss-entry" id="g-subeditor"><dt class="gloss-term">Sub-editor</dt><dd class="gloss-def">The British and Indian term for a copy editor.</dd></div>
+              <div class="gloss-entry" id="g-statoistics"><dt class="gloss-term">Statoistics</dt><dd class="gloss-def">The Times of India’s data column.</dd></div>
+              <div class="gloss-entry" id="g-ipl"><dt class="gloss-term">IPL</dt><dd class="gloss-def">The Indian Premier League, India’s top professional cricket competition, played in the short Twenty20 format.</dd></div>
+            </dl>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <div class="frame">
+        <div class="contact-panel">
+          <div>
+            <h2 class="contact-title" id="contact-title">Get in touch</h2>
+            <p class="contact-intro">For jobs, commissions or collaborations, email me or find me on LinkedIn. I’m in Cardiff, on UK time, usually five hours ahead of New York. I can work up to 20 hours a week during my MSc, and full-time from autumn 2027 on the UK Graduate visa, with no sponsorship needed until 2029.</p>
+          </div>
+          <div class="contact-grid">
+            <div class="contact-card">
+              <p class="contact-label">Email</p>
+              <p class="contact-value" id="email-text">ghosh.sayan8<wbr>@gmail.com</p>
+              <div class="contact-actions">
+                <button class="btn btn--solid" type="button" id="copy-email">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg>
+                  Copy address
+                </button>
+                <a class="btn" href="mailto:ghosh.sayan8@gmail.com">Write an email</a>
+              </div>
+              <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+            </div>
+            <div class="contact-card">
+              <p class="contact-label">LinkedIn</p>
+              <p class="contact-value">linkedin.com/in/<wbr>sayangjourno</p>
+              <div class="contact-actions">
+                <a class="btn" href="https://linkedin.com/in/sayangjourno" target="_blank" rel="noopener">
+                  Open LinkedIn<span class="sr-only"> (opens in a new tab)</span>
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17L17 7M9 7h8v8"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="contact-card">
+              <p class="contact-label">CV</p>
+              <p class="contact-value">Two pages, as a PDF</p>
+              <div class="contact-actions">
+                <a class="btn" href="Sayan-Ghosh-CV.pdf" target="_blank" rel="noopener" download>Download my CV<span class="sr-only"> (PDF)</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="frame">
+      <p>All figures as published. Data sources are named on each page.</p>
+      <p class="mono">© 2026 Sayan Ghosh. Set in Fraunces, Plus Jakarta Sans and JetBrains Mono.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating dock for phones -->
+<nav class="dock" aria-label="Jump to a section">
+  <a href="#work" data-nav="work">
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></svg>Work
+  </a>
+  <a href="#journey" data-nav="journey">
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="6" cy="6" r="2.2"/><circle cx="18" cy="18" r="2.2"/><path d="M8.2 6H15a3 3 0 0 1 0 6H9a3 3 0 0 0 0 6h6.8"/></svg>Journey
+  </a>
+  <a href="#archive" data-nav="archive">
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="4" rx="1.5"/><rect x="13" y="10" width="7" height="10" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/></svg>Archive
+  </a>
+  <a href="#guide" data-nav="guide">
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 4.5h9.5a3 3 0 0 1 3 3V20H8a3 3 0 0 1-3-3z"/><path d="M5 17a3 3 0 0 1 3-3h9.5"/></svg>Guide
+  </a>
+  <a href="#contact" data-nav="contact">
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="M4 7l8 6 8-6"/></svg>Contact
+  </a>
+</nav>
+
+<!-- Quick explanation for dotted terms -->
+<div class="gloss-pop" id="gloss-pop" hidden>
+  <p class="gloss-pop-term" id="gloss-pop-term"></p>
+  <p class="gloss-pop-def" id="gloss-pop-def"></p>
+  <p class="gloss-pop-more">More in the guide for readers outside India.</p>
 </div>
-<footer><p>Currently reading for an MSc in Computational and Data Journalism at Cardiff University.<br>
-All figures as published. Data sources named on each page.</p></footer>
+<p class="sr-only" id="gloss-live" aria-live="polite"></p>
+
+<!-- Pointer-following badge, shown only with a mouse -->
+<div class="cursor is-hidden" id="cursor" aria-hidden="true">
+  <div class="cursor-dot"><span class="cursor-label">READ</span></div>
 </div>
+
+<script src="script.js" defer></script>
+</body>
+</html>

@@ -52,6 +52,44 @@ border-radius:2px;background:var(--panel)}
 footer{margin-top:46px;padding-top:22px;border-top:1px solid var(--rule);
 font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3);line-height:1.8}
 </style>
+<style id="motion">
+@media screen and (prefers-reduced-motion:no-preference){
+header.top .wrap>*{animation:cl-rise .75s cubic-bezier(.2,.8,.2,1) both}
+header.top .wrap>:nth-child(2){animation-delay:.08s}
+header.top .wrap>:nth-child(3){animation-delay:.16s}
+header.top .wrap>:nth-child(n+4){animation-delay:.26s}
+.finding,.credits{animation:cl-rise .75s .34s cubic-bezier(.2,.8,.2,1) both}
+figure>a{position:relative;display:block}
+.cl-motion figure:not(.in) img{clip-path:inset(0 0 100% 0)}
+.cl-motion figure.in img{animation:cl-press 1.25s cubic-bezier(.65,0,.35,1) both,cl-register .9s 1.2s ease both}
+.cl-motion figure.in>a::after{content:"";position:absolute;left:0;right:0;z-index:2;height:8px;border-radius:0 0 4px 4px;background:var(--accent);box-shadow:0 4px 12px rgba(0,0,0,.3);pointer-events:none;animation:cl-roller 1.25s cubic-bezier(.65,0,.35,1) both}
+.cl-motion .hbars .f{transform-origin:left center}
+.cl-motion .cols .f{transform-origin:center bottom}
+.cl-motion .hbars:not(.in) .f{transform:scaleX(0)}
+.cl-motion .cols:not(.in) .f{transform:scaleY(0)}
+.cl-motion .hbars.in .f{animation:cl-grow-x .9s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--k,0) * 55ms)}
+.cl-motion .cols.in .f{animation:cl-grow-y .9s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--k,0) * 45ms)}
+}
+@keyframes cl-rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes cl-press{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes cl-register{from{filter:grayscale(1) contrast(1.2)}to{filter:none}}
+@keyframes cl-roller{0%{top:-4px;opacity:1}88%{opacity:1}100%{top:calc(100% - 4px);opacity:0}}
+@keyframes cl-grow-x{from{transform:scaleX(0)}to{transform:none}}
+@keyframes cl-grow-y{from{transform:scaleY(0)}to{transform:none}}
+</style>
+<script>
+(function(){var d=document.documentElement;
+try{if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion: reduce)').matches){return}}catch(e){return}
+d.classList.add('cl-motion');
+document.addEventListener('DOMContentLoaded',function(){
+function show(el){var img=el.querySelector('img');
+if(img&&!img.complete){img.addEventListener('load',function(){el.classList.add('in')});img.addEventListener('error',function(){el.classList.add('in')})}
+else{el.classList.add('in')}}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){show(e.target);io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+Array.prototype.forEach.call(document.querySelectorAll('.hbars,.cols'),function(list){Array.prototype.forEach.call(list.children,function(li,k){li.style.setProperty('--k',k)})});
+Array.prototype.forEach.call(document.querySelectorAll('figure,.hbars,.cols'),function(el){io.observe(el)});
+});})();
+</script>
 <header class="top"><div class="wrap">
 <a class="back" href="../index.html">&larr; Sayan Ghosh &middot; data journalism</a>
 <span class="date">Published September 2024</span>
